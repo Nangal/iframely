@@ -35,7 +35,7 @@ app.disable( 'x-powered-by' );
 app.use(function(req, res, next) {
     res.setHeader('X-Powered-By', 'Iframely');
     next();
-}); 
+});
 
 app.use(sysUtils.cacheMiddleware);
 
@@ -154,6 +154,8 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 var listener = app.listen(process.env.PORT || CONFIG.port, process.env.HOST || CONFIG.host, function(){
     console.log('\niframely is listening on ' + listener.address().address + ':' + listener.address().port + '\n');
 });
+
+module.exports = listener;
 
 if (CONFIG.ssl) {
     require('https').createServer(CONFIG.ssl, app).listen(CONFIG.ssl.port);

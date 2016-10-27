@@ -1,6 +1,9 @@
 (function() {
     var config = {
 
+        //
+        // CUSTOM_PLUGINS: '',
+
         DEBUG: false,
         RICH_LOG_ENABLED: false,
 
@@ -29,7 +32,7 @@
         port: 8061, //can be overridden by PORT env var
         host: 'localhost', //can be overridden by HOST env var
 
-        // Optional SSL cert, if you serve under HTTPS. 
+        // Optional SSL cert, if you serve under HTTPS.
         /*
         ssl: {
             key: require('fs').readFileSync(__dirname + '/key.pem'),
@@ -148,7 +151,7 @@
                 // media_only: true     // disables status embeds for images and videos - will return plain media
             },
             google: {
-                // https://developers.google.com/maps/documentation/embed/guide#api_key                
+                // https://developers.google.com/maps/documentation/embed/guide#api_key
                 maps_key: "INSERT YOUR VALUE"
             },
 
@@ -187,7 +190,7 @@
                     album: {
                         height: 472,
                         'max-width': 700
-                    }, 
+                    },
                     track: {
                         height: 120,
                         'max-width': 700
@@ -203,7 +206,7 @@
         // More about format: https://iframely.com/docs/qa-format
 
         /*
-        WHITELIST_WILDCARD: {  
+        WHITELIST_WILDCARD: {
               "twitter": {
                 "player": "allow",
                 "photo": "deny"

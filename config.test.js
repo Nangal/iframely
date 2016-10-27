@@ -2,6 +2,8 @@
 
   var config = {
 
+    CUSTOM_PLUGINS_PATH: __dirname + '/test/fixtures/custom-plugins',
+
     DEBUG: true,
     RICH_LOG_ENABLED: true,
 
