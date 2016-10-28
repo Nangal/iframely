@@ -2,6 +2,8 @@
 
     GLOBAL.CONFIG = require('./config');
 
+    console.log('---', process.env.NODE_ENV);
+
     var async = require('async');
     var cache = require('./lib/cache');
     var ejs = require('ejs');
